@@ -1,0 +1,32 @@
+{
+  "name": "citysites/yii2-ok-widget",
+  "type": "yii2-extension",
+  "description": "The OK widget integration for the Yii framework",
+  "keywords": ["yii2", "ok", "odnoklassniki", "widget"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/citysites/yii2-ok-widget/issues",
+    "source": "https://github.com/citysites/yii2-ok-widget"
+  },
+  "authors": [
+    {
+      "name": "Ivan Aslanov",
+      "email": "bumerx591@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "yiisoft/yii2": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "citysites\\okwidget\\": ""
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
