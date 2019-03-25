@@ -71,13 +71,13 @@ class OKWidget extends Widget
             case self::TYPE_SHARE:
                 /** @var ShareConfig $config */
                 $config = $this->config;
-                return sprintf('OK.CONNECT.insertShareWidget("%s", "%s", "%s", "%s", "%s", "%s");', $this->getId(),
+                return sprintf('OK.CONNECT.insertShareWidget("%s", "%s", \'%s\', "%s", "%s", "%s");', $this->getId(),
                     $config->getLink(), $config->getParamsAsJson(), $config->getTitle(), $config->getDescription(),
                     $config->getImageUrl());
             case self::TYPE_GROUP:
                 /** @var GroupConfig $config */
                 $config = $this->config;
-                return sprintf('OK.CONNECT.insertGroupWidget("%s", "%s", "%s");', $this->getId(),
+                return sprintf('OK.CONNECT.insertGroupWidget("%s", "%s", \'%s\');', $this->getId(),
                     $config->getGroupId(), $config->getParamsAsJson());
         }
     }
